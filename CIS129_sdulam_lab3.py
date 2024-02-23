@@ -7,3 +7,40 @@
 #salesIncrease = precent of increase
 
 #monthlySales = monthly sales amount
+
+
+print("What was your store's monthly sales?")
+monthlySales = float(input())
+
+#determines the storeAmount bonus
+if monthlySales >= 110000:
+    storeAmount = 6000
+elif monthlySales >= 100000:
+    storeAmount = 5000
+elif monthlySales >= 90000:
+    storeAmount = 4000
+elif monthlySales >= 80000:
+    storeAmount = 3000
+else:
+    storeAmount = 0
+    
+#Determines the percent of increase in sales
+print("What was percent increase in sales?")
+salesIncrease = float(input())
+salesIncrease = salesIncrease/100
+
+#determines the empAmount bonus
+if salesIncrease >= 0.05:
+    empAmount = 75
+elif salesIncrease >=0.04:
+    empAmount = 50
+elif salesIncrease >=0.03:
+    empAmount = 40
+else:
+    empAmount = 0 
+    
+# print the bonus information for store and employees
+print("The store bonus amount is $",storeAmount,"\nThe employee bonus amount is $",empAmount,)
+
+if storeAmount == 6000 and empAmount == 75:
+    print("Congrats! You've reached the highest bonus amounts possible!")
