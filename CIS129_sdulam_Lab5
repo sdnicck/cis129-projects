@@ -1,0 +1,24 @@
+counter = 0
+today_bottles = 0
+total_bottles = 0
+total_payout = 0
+keep_going = "y"
+
+while keep_going == "y":
+    counter = 0
+    today_bottles = 0
+    total_bottles = 0
+    total_payout = 0
+    while counter < 7:
+        counter = counter + 1
+        print("Enter number of bottles returned for day #", counter,":")
+        today_bottles = int(input())
+        total_bottles = total_bottles + today_bottles
+    
+    PAYOUT_PER_BOTTLE = 0.10
+    total_payout = PAYOUT_PER_BOTTLE * total_bottles
+
+    print("\nThe total number of bottles collected is", total_bottles)
+    print("The total paid out is $",format(total_payout,'0.1f'))
+    
+    keep_going = input("\nDo you want to enter another week's worth of data? (Enter y or n):")
