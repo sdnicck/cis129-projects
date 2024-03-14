@@ -1,0 +1,37 @@
+#3/13/24
+
+#1.a. create a main program that asks user for number
+# with input validation (the getInteger() function)
+
+def main():
+    while True:# the while true: loop needs to be above the code we want to repeat
+        userNumber = getInteger('Enter a number:')
+        #1.b. tell the user if the number is odd or even
+        if (userNumber % 2 == 0):
+            print('The number is even!')
+        else:
+            print('The number is odd!')
+        #1.c. ask the user if they want to do it again
+        #using a decision structure and a loop
+        print('Do you want to do it again?')
+        again = input('enter \'y\' to loop again:')
+        if again !='y':
+            break # the break statement will be reached only when the user enters something that is not 'y'
+    print('The loop has ended')
+
+#input function, function to collect integer input
+def getInteger(message): #add the getInteger() definitoin below main, outside of the other functions. Be careful about indentation!
+    while True:
+        try:
+            userInput = int(input(message))
+            return userInput
+        except ValueError:
+            print('Incorrect data entered, please re-attempt')
+            
+# then in main(), add more calls to the function to collect integer data. You can use this for any input that requires an integer!
+
+# age = getInteger('How old are you?')
+# favoriteNumber = getInteger('What is the best whole number?')
+# pizzas = getInteger('How many pizzas do we need to order?')
+    
+main() #don't forget to call main!
