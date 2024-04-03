@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[2]:
-
-
 # Satya Dulam
 # 4/2/14
 # Lab 7: Calculator to add up total amount of revenue 
@@ -123,16 +117,3 @@ def isInvalid(newValue, LOW, HIGH):
 
             
 main()
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
