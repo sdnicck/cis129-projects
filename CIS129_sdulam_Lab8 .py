@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[107]:
-
-
 #Satya Dulam
 #lab 8
 #4/10/24
@@ -55,17 +49,3 @@ def getInput(message):
     return userInput
     
 is_palidrome()
-    
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
