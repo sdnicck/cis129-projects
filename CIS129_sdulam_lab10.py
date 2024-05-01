@@ -31,16 +31,5 @@ def getFloat(message):
 main()
 
 
-# In[8]:
-
-
-#amount = "399.87" # this represents the dollar amount
-amount = input('Enter a dollar amount:')
-print(f'{amount:$>10}')
-
-
-# In[ ]:
-
-
 
 
