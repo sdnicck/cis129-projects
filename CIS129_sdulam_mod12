@@ -1,0 +1,35 @@
+#Satya Dulam
+#5/17/24
+#CIS129
+#Mod 12 lab
+
+def main():
+    
+    inputName = str(0)
+    inputType = str(0)
+    inputAge = int(0)
+    
+    class petAnimal:
+        
+        Animal = new Pet()
+    
+        inputName = input(print("Enter a pet name:"))
+    
+        Animal.setName(inputName)
+    
+        inputType = input(print("Enter a pet type:"))
+    
+        Animal.setType(inputType)
+        
+        inputAge = input(print("Enter a pet age:"))
+        
+        Animal.setAge(inputType)
+        
+        print("The pet name is", Animal.getName())
+        
+        print("The pet type is", Amianl.getType())
+        
+        print("The pet age is", Animal.getAge())
+        
+main()
+    
